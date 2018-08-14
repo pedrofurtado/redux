@@ -67,33 +67,3 @@ export {
   createStore,
   combineReducers
 };
-
-
-// using.
-
-const store = createStore({
-  abc: (state = [55], action) => {
-    switch(action.type) {
-      case 'A':
-        return [...state, 777];
-      case 'B':
-        return [...state, 2];
-      default:
-        return state;
-    }
-  }
-});
-
-store.subscribe(() => {
-  console.log('---subscribe');
-  console.log(store.getState());
-  console.log('<<<subscribe');
-});
-
-store.dispatch({ type: 'A' });
-store.dispatch({ type: 'B' });
-store.dispatch({ type: 'B' });
-
-console.log('---fim');
-console.log(store.getState());
-console.log('<<<fim');
