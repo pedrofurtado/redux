@@ -1,40 +1,19 @@
-const isPlainObject = (obj) => {
-  if (typeof obj !== 'object' || obj === null) { return false; }
-
-  let proto = obj;
-
-  while (Object.getPrototypeOf(proto) !== null) {
-    proto = Object.getPrototypeOf(proto);
-  }
-
-  return Object.getPrototypeOf(obj) === proto;
-};
-
-const combineReducers = (reducers) => {
-  if(!isPlainObject(reducers)) { throw 'The reducers must be placed in a plain object.'; }
-
-  for(let key in reducers) {
-    const reducer = reducers[key];
-
-    if(typeof(reducer) !== 'function') {
-      throw 'Reducers must be a function.';
-    }
-  }
-
-  return reducers;
-};
-
-const createStore = (reducers) => {
+const createStore = (_reducers, _middlewares) => {
   let state = {};
   const initialAction = 'REDUX_INITIAL_ACTION';
   const subscribers = [];
-  const combinedReducers = combineReducers(reducers);
+  const reducers = _reducers;
+  const middlewares = _middlewares;
+
+  const runAllMiddlewares = (action) => {
+    middlewares.forEach((middleware) => middleware(state, action));
+  };
 
   const generateNextStateFromReducers = (action) => {
     const nextState = {};
 
-    for(let key in combinedReducers) {
-      const reducer = combinedReducers[key];
+    for(let key in reducers) {
+      const reducer = reducers[key];
       nextState[key] = reducer(state[key], action);
     }
 
@@ -46,6 +25,7 @@ const createStore = (reducers) => {
   };
 
   const dispatch = (action) => {
+    runAllMiddlewares(action);
     generateNextStateFromReducers(action);
     notifyAllSubscribers();
   };
@@ -64,6 +44,5 @@ const createStore = (reducers) => {
 };
 
 export {
-  createStore,
-  combineReducers
+  createStore
 };
