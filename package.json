@@ -24,7 +24,7 @@
   "homepage": "https://github.com/pedrofurtado/redux",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^6.4.1",
+    "babel-loader": "^6.0.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-register": "^6.26.0",
