@@ -1,6 +1,6 @@
 {
   "name": "pedrofurtado-redux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My own Redux. Just for fun.",
   "main": "dist/pedrofurtado-redux.js",
   "scripts": {
