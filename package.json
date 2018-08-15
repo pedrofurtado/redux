@@ -1,6 +1,6 @@
 {
   "name": "pedrofurtado-redux",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My own Redux. Just for fun.",
   "main": "dist/pedrofurtado-redux.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedrofurtado/redux.git"
+    "url": "https://github.com/pedrofurtado/pedrofurtado-redux.git"
   },
   "keywords": [
     "redux",
@@ -19,18 +19,18 @@
   "author": "Pedro Furtado <pedro.felipe.azevedo.furtado@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pedrofurtado/redux/issues"
+    "url": "https://github.com/pedrofurtado/pedrofurtado-redux/issues"
   },
-  "homepage": "https://github.com/pedrofurtado/redux",
+  "homepage": "https://github.com/pedrofurtado/pedrofurtado-redux",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "babel-core": "^6.0.0",
     "babel-loader": "^7.0.0",
-    "babel-preset-latest": "^6.24.1",
+    "babel-preset-latest": "^6.0.0",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-filter": "^5.0.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-rename": "^1.4.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-rename": "^1.0.0",
     "gulp-sourcemaps": "^2.0.0",
     "gulp-uglify": "^3.0.0",
     "webpack": "^4.0.0",
