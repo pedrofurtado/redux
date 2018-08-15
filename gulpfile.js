@@ -28,11 +28,11 @@ function build() {
       },
       externals: {},
       module: {
-        loaders: [
+        rules: [
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader'
+            use: 'babel-loader'
           }
         ]
       },

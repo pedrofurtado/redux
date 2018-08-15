@@ -24,7 +24,7 @@
   "homepage": "https://github.com/pedrofurtado/redux",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^6.0.0",
+    "babel-loader": "^7.0.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-register": "^6.26.0",
@@ -36,8 +36,8 @@
     "gulp-sourcemaps": "^2.0.0",
     "gulp-uglify": "^3.0.0",
     "json-loader": "^0.5.7",
-    "webpack": "^1.15.0",
-    "webpack-stream": "^3.2.0"
+    "webpack": "^4.0.0",
+    "webpack-stream": "^5.0.0"
   },
   "babelBoilerplateOptions": {
     "entryFileName": "index.js",
