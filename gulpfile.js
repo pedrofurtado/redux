@@ -47,10 +47,6 @@ function build() {
     .pipe(gulp.dest(destinationFolder));
 }
 
-function _registerBabel() {
-  require('babel-register');
-}
-
 gulp.task('clean', cleanDist);
 gulp.task('clean-tmp', cleanTmp);
-gulp.task('build', ['clean-tmp', 'clean'], build);
+gulp.task('build', build);

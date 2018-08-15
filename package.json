@@ -2,9 +2,9 @@
   "name": "pedrofurtado-redux",
   "version": "1.0.0",
   "description": "My own Redux. Just for fun.",
-  "main": "dist/redux.js",
+  "main": "dist/pedrofurtado-redux.js",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp clean && gulp clean-tmp && gulp build"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "babel-loader": "^7.0.0",
     "babel-preset-latest": "^6.24.1",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-filter": "^5.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-rename": "^1.4.0",
