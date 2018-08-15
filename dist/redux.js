@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["redux"] = factory();
+		exports["pedrofurtado-redux"] = factory();
 	else
-		root["redux"] = factory();
+		root["pedrofurtado-redux"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
