@@ -1,14 +1,14 @@
 {
-  "name": "pedrofurtado-redux",
-  "version": "1.0.2",
+  "name": "@pedrofurtado/redux",
+  "version": "1.0.3",
   "description": "My own Redux. Just for fun.",
-  "main": "dist/pedrofurtado-redux.js",
+  "main": "dist/redux.js",
   "scripts": {
     "build": "gulp clean && gulp clean-tmp && gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedrofurtado/pedrofurtado-redux.git"
+    "url": "https://github.com/pedrofurtado/redux.git"
   },
   "keywords": [
     "redux",
@@ -19,9 +19,9 @@
   "author": "Pedro Furtado <pedro.felipe.azevedo.furtado@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pedrofurtado/pedrofurtado-redux/issues"
+    "url": "https://github.com/pedrofurtado/redux/issues"
   },
-  "homepage": "https://github.com/pedrofurtado/pedrofurtado-redux",
+  "homepage": "https://github.com/pedrofurtado/redux",
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^7.0.0",
@@ -38,6 +38,6 @@
   },
   "babelBoilerplateOptions": {
     "entryFileName": "index.js",
-    "mainVarName": "pedrofurtado-redux"
+    "mainVarName": "@pedrofurtado/redux"
   }
 }
