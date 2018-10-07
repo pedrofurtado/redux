@@ -1,6 +1,6 @@
 {
   "name": "@pedrofurtado/redux",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "My own Redux. Just for fun.",
   "main": "dist/redux.js",
   "scripts": {
@@ -10,12 +10,6 @@
     "type": "git",
     "url": "https://github.com/pedrofurtado/redux.git"
   },
-  "keywords": [
-    "redux",
-    "redux-clone",
-    "javascript",
-    "ecmascript"
-  ],
   "author": "Pedro Furtado <pedro.felipe.azevedo.furtado@gmail.com>",
   "license": "MIT",
   "bugs": {
