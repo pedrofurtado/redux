@@ -1,11 +1,11 @@
-# Pedro Furtado Redux
+# Redux
 
 My own Redux. Just for fun.
 
 ## Example usage
 
 ```javascript
-import { createStore } from 'pedrofurtado-redux';
+import { createStore } from '@pedrofurtado/redux';
 
 const reducer1 = (state = [], action) => {
   switch(action.type) {
@@ -71,11 +71,5 @@ To build the `dist/` folder, execute the following command:
 ```bash
 $ docker-compose up --build -d
 ```
-
-# Alert: Don't use it in your projects!
-
-This repo is just for study, in order to understand how Redux works behind the scenes.
-Naturally, the official Redux is much more flexible and complex.
-But, for fun, I've made a simple version of it.
 
 Enjoy!
